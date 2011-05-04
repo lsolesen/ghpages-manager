@@ -25,7 +25,24 @@ $GLOBALS['ROUTES']['~^GET/([?].*)?$~'] = "root";
 //
 // To see all routes and what they resolve to, run the script `scripts/routes`
 
+$GLOBALS['ROUTES']['~^POST/([?].*)?$~'] = "root";
+$GLOBALS['ROUTES']['~^/page_edit~'] = "page_edit";
+$GLOBALS['ROUTES']['~^/new_page~'] = "page_new";
+$GLOBALS['ROUTES']['~^/page~'] = "page";
+
 // Add your url helpers here
 function root_url() {
   return $GLOBALS['HREF_BASE'] . '/';
+}
+
+function page_url($filename) {
+  return root_url() . 'page?filename=' . $filename;
+}
+
+function page_edit_url($filename) {
+  return root_url() . 'page_edit?filename=' . $filename;
+}
+
+function page_new_url() {
+  return root_url() . 'new_page';
 }

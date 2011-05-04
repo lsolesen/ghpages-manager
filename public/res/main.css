@@ -1,2 +1,15 @@
 body { color: #281E00; font-family: sans-serif; }
 code { background: rgba(0, 220, 220, 0.2); padding: 2px 4px; }
+input.classy,button.classy,a.button.classy{height:34px;padding:0px 25px;position:relative;top:1px;font-family:helvetica,arial,freesans,clean,sans-serif;font-weight:bold;font-size:12px;color:#333;text-shadow:1px 1px 0 #fff;white-space:nowrap;border:none;overflow:visible;background:#ddd;filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff',endColorstr='#e1e1e1');background:-webkit-gradient(linear,0% 0,0% 100%,from(#fff),to(#e1e1e1));background:-moz-linear-gradient(-90deg,#fff,#e1e1e1);border-bottom:1px solid #ebebeb;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:0 1px 4px rgba(0,0,0,0.3);-moz-box-shadow:0 1px 4px rgba(0,0,0,0.3);box-shadow:0 1px 4px rgba(0,0,0,0.3);cursor:pointer;-webkit-font-smoothing:subpixel-antialiased!important;}
+input.classy:hover,button.classy:hover,a.button.classy:hover{color:#fff;text-shadow:-1px -1px 0 rgba(0,0,0,0.3);border-bottom-color:#0770a0;background:#0770a0;filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#0ca6dd',endColorstr='#0770a0');background:-webkit-gradient(linear,0% 0,0% 100%,from(#0ca6dd),to(#0770a0));background:-moz-linear-gradient(-90deg,#0ca6dd,#0770a0);}
+input.classy.mousedown,button.classy.mousedown,a.button.classy.mousedown{color:#fff;text-shadow:-1px -1px 0 rgba(0,0,0,0.3);background:#0ca6dd;filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#0ca6dd',endColorstr='#0770a0');background:-webkit-gradient(linear,0% 100%,0% 0,from(#0ca6dd),to(#0770a0));background:-moz-linear-gradient(90deg,#0ca6dd,#0770a0);}
+input.classy.mousedown, button.classy.mousedown span,a.button.classy.mousedown span{background-position:0 -120px;}
+input.classy::-moz-focus-inner,button.classy::-moz-focus-inner{margin:-1px -3px;}
+input.classy:disabled,button.classy:disabled,.button.classy.disabled{opacity:.5;}
+a.button.classy{display:inline-block;text-decoration:none;}
+a.button.classy span{display:block;height:34px;padding:0 13px;line-height:36px;}
+textarea {width: 99.5%; }
+.flash-notice {
+  padding: 0.5em;
+  background: #ccc;
+}
